@@ -1,5 +1,9 @@
 # Getting Started with The react Template
 
+### `npx create-react-sass-app app_name`
+
+Replace the app name with your desired name.
+
 ## Available Scripts
 
 In the project directory, you can run:
