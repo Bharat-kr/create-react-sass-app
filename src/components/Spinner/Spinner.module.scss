@@ -1,52 +1,28 @@
 .container {
-  // position: absolute;
-  z-index: 300;
-  align-self: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translateY(-2px);
+  position: relative;
   .lds-ring {
-    display: inline-block;
-    position: relative;
-    width: 10px;
-    height: 10px;
-  }
-  .lds-ring div {
-    box-sizing: border-box;
-    display: block;
-    position: absolute;
     width: 12px;
     height: 12px;
-    margin: 2px;
-    border: 2px solid white;
-    border-radius: 50%;
-    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-    border-color: white transparent transparent transparent;
-  }
-  .dark div {
-    box-sizing: border-box;
-    display: block;
     position: absolute;
-    width: 12px;
-    height: 12px;
-    margin: 2px;
-    border: 2px solid rgb(30, 69, 82);
-    border-radius: 50%;
-    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-    border-color: rgb(30, 69, 82) transparent transparent transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    div {
+      position: absolute;
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      border: 2px solid white;
+      border-radius: 50%;
+      animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+      border-color: white transparent transparent transparent;
+    }
   }
-  .blue div {
-    box-sizing: border-box;
-    display: block;
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    margin: 2px;
-    border: 2px solid #567191;
-    border-radius: 50%;
-    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-    border-color: #567191 transparent transparent transparent;
+  .blue {
+    div {
+      border: 2px solid #567191;
+      border-color: #567191 transparent transparent transparent;
+    }
   }
   .lds-ring div:nth-child(1) {
     animation-delay: -0.45s;
