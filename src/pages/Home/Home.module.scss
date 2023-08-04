@@ -5,12 +5,12 @@
   flex-direction: column;
   gap: 20px;
   align-items: center;
-  justify-content: center;
   ul {
     li {
       font-weight: 500;
-      display: flex;
-      align-items: center;
+      display: grid;
+      grid-template-columns: 2fr 5fr 5fr;
+      align-content: center;
       gap: 40px;
       margin: 10px;
     }
