@@ -1,15 +1,18 @@
 .home {
   width: 100%;
   height: 100%;
+  padding: 0 100px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: center;
   ul {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
     li {
       font-weight: 500;
       display: grid;
-      grid-template-columns: 2fr 5fr 5fr;
+      grid-template-columns: 3fr 6fr;
       align-content: center;
       gap: 40px;
       margin: 10px;

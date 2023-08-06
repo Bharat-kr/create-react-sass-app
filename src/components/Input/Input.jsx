@@ -15,6 +15,7 @@ const Input = ({
   isCopyable,
   value,
   placeholder = 'Type here...',
+  name,
   ...rest
 }) => {
   const [eye, setEye] = useState(true);
@@ -34,6 +35,7 @@ const Input = ({
       {type === inputTypes.PHONE && <div className={styles.prefix}>+91</div>}
       <input
         type={type === inputTypes.PASSWORD && eye ? 'password' : 'text'}
+        name={name}
         onChange={onChange}
         placeholder={placeholder}
         {...rest}
